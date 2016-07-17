@@ -1,4 +1,11 @@
-﻿//Автостилл спелов
+/*-----------------------------------------------
+//////////////// vk.com/d2jscripts //////////////
+/////////////////////////////////////////////////
+Отображает вражеский чат.
+Автор: vk.com/exieros
+/////////////////////////////////////////////////
+-----------------------End---------------------*/
+
 try{
 	Game.Panels.EnemyChat.DeleteAsync(0)
 	GameEvents.Unsubscribe( parseInt(Game.Subscribes.EnemyChatOnMsg) )
@@ -6,7 +13,7 @@ try{
 
 function EnemyChatCreatePanel(){
 	Game.Panels.EnemyChat = $.CreatePanel( 'Panel', Game.GetMainHUD(), 'EnemyChatPanel' )
-	Game.Panels.EnemyChat.BLoadLayoutFromString( '<root><Panel style="border: 1px solid #000;background-color:#000000EE;width:220px;overflow: squish scroll;height: 300px;flow-children: down;"></Panel></root>', false, false )
+	Game.Panels.EnemyChat.BLoadLayoutFromString( '<root><Panel style="width:650px;overflow: squish scroll;height: 75px;flow-children: down;"></Panel></root>', false, false )
 	GameUI.MovePanel(Game.Panels.EnemyChat,function(p){
 		var position = p.style.position.split(' ')
 		Config.MainPanel.x = position[0]
@@ -18,14 +25,15 @@ function EnemyChatCreatePanel(){
 		Game.Panels.EnemyChat.style.position = Config.MainPanel.x + ' ' + Config.MainPanel.y + ' 0'
 	})
 	Game.Subscribes.EnemyChatOnMsg = GameEvents.Subscribe("player_chat", function(a){
-		if(Players.GetTeam(Players.GetLocalPlayer())==Players.GetTeam(a.playerid))
+		if(Players.GetTeam(Players.GetLocalPlayer())==Players.GetTeam(a.playerid)||!a.teamonly)
 			return
 		var text = a.text
 		var heroname = Players.GetPlayerSelectedHero(a.playerid)
 		var message = $.CreatePanel( 'Panel', Game.Panels.EnemyChat, 'EnemyChatMessage' )
-		message.BLoadLayoutFromString( '<root><Panel style="border: 1px solid #000;width:100%;flow-children: right;"><DOTAHeroImage style="height:20px;width:33px;"/><Label style="font-size:15px;text-shadow:0px 0px 4px 1.2 #0F0 33;color:#0F0;"/></Panel></root>', false, false )
+		message.BLoadLayoutFromString( '<root><Panel style="width:100%;flow-children: right;"><DOTAHeroImage style="height:24px;width:43px;"/><Label style="font-size:17px;color:#F66;margin:0 0 0 12px;font-weight: bold;" text="[ALLIES]"/><Label style="font-size:17px;color:#44F;font-weight: bold;"/><Label style="font-size:17px;color:#FFF;"/></Panel></root>', false, false )
 		message.Children()[0].heroname = heroname
-		message.Children()[1].text = text
+		message.Children()[2].text = Players.GetPlayerName(a.playerid)+':'
+		message.Children()[3].text = text
 		message.DeleteAsync(9)
 		Game.AnimatePanel( message, {"opacity": "0;"}, 4, "linear", 5)
 	})
@@ -45,7 +53,7 @@ var EnemyChatOnCheckBoxClick = function(){
 }
 
 //шаблонное добавление чекбокса в панель
-var Temp = $.CreatePanel( "Panel", $('#trics'), "EnemyChat" )
+var Temp = $.CreatePanel( "Panel", $('#scripts'), "EnemyChat" )
 Temp.SetPanelEvent( 'onactivate', EnemyChatOnCheckBoxClick )
 Temp.BLoadLayoutFromString( '<root><styles><include src="s2r://panorama/styles/dotastyles.vcss_c" /><include src="s2r://panorama/styles/magadan.vcss_c" /></styles><Panel><ToggleButton class="CheckBox" id="EnemyChat" text="EnemyChat"/></Panel></root>', false, false)  
 var EnemyChat = $.GetContextPanel().FindChildTraverse( 'EnemyChat' ).Children()[0]
