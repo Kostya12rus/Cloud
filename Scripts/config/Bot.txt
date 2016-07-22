@@ -1,0 +1,8 @@
+Pointlvl = 24
+go = D
+lvl = U
+PointGold = 99999
+wtf = P
+gold = T
+refresh = K
+respawn = O

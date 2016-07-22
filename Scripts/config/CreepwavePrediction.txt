@@ -1,0 +1,3 @@
+ShowOnMap = true
+ShowOnMinimap = true
+Sleep = 0

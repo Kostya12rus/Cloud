@@ -1,0 +1,3 @@
+SaveKey = K
+WaitT = 3
+HotKey = L

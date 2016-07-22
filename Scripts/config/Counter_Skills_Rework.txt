@@ -1,0 +1,13 @@
+Eul = true
+TextX = 0
+ShowText = true
+DelayBlink = 0
+DelayEulOnTarget = 0
+BlinkToggleKey = N
+Blink = false
+TextSize = 14
+ShortBlinkDodge = true
+TextY = 0
+
+
+SleepMS = 0

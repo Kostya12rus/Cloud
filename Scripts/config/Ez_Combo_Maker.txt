@@ -1,0 +1,4 @@
+Combo = D
+AutoAttack = false
+AttackAfterSpell = true
+ComboState = true

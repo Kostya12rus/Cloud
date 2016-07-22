@@ -1,0 +1,2 @@
+Rand = false
+RUS = true

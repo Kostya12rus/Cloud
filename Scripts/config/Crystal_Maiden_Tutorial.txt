@@ -1,0 +1,2 @@
+StopKey = S
+ComboKey = D

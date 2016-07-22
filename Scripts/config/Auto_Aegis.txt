@@ -1,0 +1,2 @@
+StealAegis = J
+DenyAegis = K

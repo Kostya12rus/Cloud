@@ -1,0 +1,6 @@
+GO = D
+VIDNOleave = true
+ALHIMIST = P
+minHP = 200
+ONOFF = T
+NECROPFOS = O

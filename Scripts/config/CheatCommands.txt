@@ -1,0 +1,3 @@
+AutoExecute = true
+Commands = fog_enable 0,cl_predict 1,fog_override 1,fog_end 30000,
+Hotkey = F

@@ -1,0 +1,5 @@
+Chase = S
+QuillSpam = R
+QuillHold = D
+QuillFarm = E
+QuillToggle = F

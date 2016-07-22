@@ -1,0 +1,3 @@
+AutoAttack = false
+AttackAfterSpell = true
+Hotkey = T

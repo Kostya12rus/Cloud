@@ -1,0 +1,9 @@
+CreepCutKey = U
+EnableHotkeys = true
+FarmJungleKey = I
+VersionInfoPosY = 750
+OpenMenu = M
+VersionInfoPosX = 670
+StackKey = F
+ComboScriptKey = G
+AutoModeKey = D

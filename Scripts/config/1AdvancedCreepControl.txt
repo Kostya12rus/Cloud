@@ -1,0 +1,12 @@
+enableLasthits = true
+ActiveFromStart = true
+ShowMenuAtStart = false
+Menu = L
+drawrange = false
+AutoUnAggro = false
+ShowSign = false
+CustomMove = G
+UseAttackModifiers = false
+UseharassMode = false
+enableDenies = true
+Spaceformove = true

@@ -1,0 +1,10 @@
+MagicStick = true
+Bottle = true
+PhaseBoots = true
+
+
+ArcaneBots = true
+LSphere = true
+Cheese = true
+SoulRing = true
+Midas = true

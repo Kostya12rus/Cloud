@@ -1,0 +1,3 @@
+PosY = 0
+PosX = -100
+Font = 13

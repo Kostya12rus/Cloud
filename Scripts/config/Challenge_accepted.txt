@@ -1,0 +1,6 @@
+StopComboKey = S
+BlinkComboKey = D
+manacheck = true
+lowResolution = false
+toggleKey = F
+hidemessage = false

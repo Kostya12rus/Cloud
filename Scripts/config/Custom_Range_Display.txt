@@ -1,0 +1,4 @@
+Decrease = J
+Extend = H
+Range = 700
+Hotkey = B

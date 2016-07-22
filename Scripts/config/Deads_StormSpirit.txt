@@ -1,0 +1,11 @@
+NoBall = F
+Stay = S
+Chase = D
+
+
+Escape = Z
+Distance = E
+SKeyDistance = 400
+Toggle = X
+AutoDisjoint = true
+EKeyDistance = 650

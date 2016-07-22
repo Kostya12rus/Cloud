@@ -1,0 +1,4 @@
+UseQlasthit = true
+LastHitWithSpider = true
+DenyWithSpider = true
+Spider = D

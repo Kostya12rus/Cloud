@@ -1,0 +1,9 @@
+manaBar = true
+Ally = true
+glypPanel = true
+topPanel = true
+ShowRune = true
+ShowIfVisible = false
+overlayItem = true
+ShowCourier = true
+overlaySpell = true

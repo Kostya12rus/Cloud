@@ -1,0 +1,8 @@
+Active = Z
+Combokey = H
+Auto = true
+
+
+AutoGlobalSpells = false
+GlobalKey = H
+MinTarget4AutoKill = 2

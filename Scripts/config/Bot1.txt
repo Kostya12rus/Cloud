@@ -1,0 +1,3 @@
+knopka = D
+StartTime = 1
+bay = T

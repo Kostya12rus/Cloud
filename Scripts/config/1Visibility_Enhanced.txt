@@ -1,0 +1,11 @@
+VisibleRoshan = true
+Ward = true
+Building = true
+Mines = true
+Creep = true
+VisibleRune = true
+Allies = true
+SummonMisc = true
+Neutral = true
+Self = true
+Courier = true
