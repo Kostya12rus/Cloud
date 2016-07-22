@@ -1,0 +1,3 @@
+DenyWithTreants = true
+Treants = D
+LastHitWithTreants = true

@@ -1,0 +1,3 @@
+LastHitWithWards = true
+DenyWithWards = true
+SlowEnemies = true

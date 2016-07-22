@@ -1,0 +1,3 @@
+ImpaleKey = G
+Hotkey = F
+ComboKey = D

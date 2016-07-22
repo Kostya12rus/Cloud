@@ -1,0 +1,9 @@
+ActiveFromStart = true
+ShowSign = true
+Move = 32
+DontOrbwalkWhenIdle = true
+Hotkey = N
+LasthitToggleKey = V
+
+
+AutoChase = B

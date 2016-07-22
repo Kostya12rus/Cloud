@@ -1,0 +1,3 @@
+RunKey = D
+ComboKey = E
+AttackKey = R

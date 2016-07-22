@@ -1,0 +1,3 @@
+TargetLeastHP = false
+ComboKey = D
+UseMysticFlare = false

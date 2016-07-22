@@ -1,0 +1,5 @@
+Antiheight = 150
+Imagesize = 20
+Distancefontimage = 15
+Fontsize = 20
+Verticaldistance = 14

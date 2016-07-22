@@ -1,0 +1,13 @@
+Debug = P
+Meepo4 = 52
+Meepo1 = 49
+PoofBindInDota = W
+Meepo2 = 50
+Meepo5 = 53
+FarmJungleKey = B
+Meepo3 = 51
+EarthbindBindInDota = Q
+EnableAutoBind = true
+AllMeeposIdle = V
+StopKeyBindInDota = S
+MinimapNumbersXMove = 0

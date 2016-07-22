@@ -1,0 +1,7 @@
+TimeForStun = 3
+RangeForStun = 400
+Activate = T
+HpPercentFamiliars = 0.3
+StoneForAll = F
+Ycord = 40
+Xcord = 50

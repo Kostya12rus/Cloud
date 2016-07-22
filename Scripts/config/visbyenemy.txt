@@ -1,0 +1,8 @@
+Width = 59
+Ycord = 5
+Height = 32
+Xcord = 254
+Centwidth = 181
+
+
+Ping = false

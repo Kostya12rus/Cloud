@@ -1,0 +1,11 @@
+CustomMove = J
+Spaceformove = false
+ShowMenuAtStart = false 
+ActiveFromStart = true 
+DontOrbwalkWhenIdle = true 
+EnableAttackModifiers = true 
+ShowSign = false 
+Menu = HAutoAttackKey = SModifiersTogglekey = J
+
+AutoAttackKey = S
+ModifiersTogglekey = J

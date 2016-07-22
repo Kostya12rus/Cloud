@@ -1,0 +1,3 @@
+rearm = true
+blink = true
+hotkey = F

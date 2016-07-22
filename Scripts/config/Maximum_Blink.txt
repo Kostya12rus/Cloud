@@ -1,0 +1,4 @@
+BlinkKey = P
+AltKey = false
+Quickcast = false
+BlinkRange = true

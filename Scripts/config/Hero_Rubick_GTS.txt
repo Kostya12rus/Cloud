@@ -1,0 +1,4 @@
+ShowLastSpell = true
+YY = 0
+EverySpells = true
+XX = 20

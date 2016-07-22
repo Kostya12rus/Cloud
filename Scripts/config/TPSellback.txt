@@ -1,0 +1,3 @@
+RemainingTime = 0.06
+Hotkey = U
+DependOnPing = true

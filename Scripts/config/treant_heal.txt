@@ -1,0 +1,5 @@
+Hotkey = T
+SoulRing = true
+Self = 0.5
+Tower = 0.3
+Team = 0.8

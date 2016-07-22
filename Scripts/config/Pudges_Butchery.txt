@@ -1,0 +1,17 @@
+GuiSleep = 0
+EnableMouseAdjusting = false
+BlindHooks = false
+ManualtoggleKey = G
+Hotkey = F
+PredictionGUI = true
+HookTolerancy = 0
+StopKey = S
+Hookkey = D
+
+
+HookCanceling = true
+
+
+AutoUrn = true
+AutoEthereal = true
+AutoCombo = true

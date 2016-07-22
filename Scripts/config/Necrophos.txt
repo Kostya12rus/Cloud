@@ -1,0 +1,2 @@
+RangeEnable = true
+ComboKey = D

@@ -1,0 +1,10 @@
+WWW = 4
+WWE = 6
+EEW = 9
+QQQ = 1
+EEE = 7
+QQE = 3
+WWQ = 5
+QWE = 0
+EEQ = 8
+QQW = 2

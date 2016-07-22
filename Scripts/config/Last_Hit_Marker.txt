@@ -1,0 +1,4 @@
+LastHit = false
+LastHitKey = C
+AutoDisableLateGame = false
+DenayHitKey = X
