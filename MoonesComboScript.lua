@@ -1,8 +1,3 @@
---<<Auto Chase + Spell/Item Combo, made by Moones>>
-
---[[ Moones's Combo Script ]]--
---[[ Protection removed by ensage-forum.ru]]--
-
 local currentVersion = 0.45
 local Beta = ""
 
@@ -3741,9 +3736,9 @@ function Main(tick)
 		local up,ver,beta,info = Version()
 		if up then
 			if beta ~= "" then
-				versionSign.text = "Your version of MCScript by ensage-forum.ru is up-to-date! (v"..currentVersion.." "..Beta..")"
+				versionSign.text = "Your version of MCScript is up-to-date! (v"..currentVersion.." "..Beta..")"
 			else
-				versionSign.text = "Your version of MCScript by ensage-forum.ru is up-to-date! (v"..currentVersion..")"
+				versionSign.text = "Your version of MCScript is up-to-date! (v"..currentVersion..")"
 			end
 			versionSign.color = 0x007ACCFF
 			if info then
@@ -3753,9 +3748,9 @@ function Main(tick)
 		end
 		if outdated then
 			if beta ~= "" then
-				versionSign.text = "Your version of MCScript by ensage-forum.ru is OUTDATED (Yours: v"..currentVersion.." "..Beta.." Current: v"..ver.." "..beta..")"
+				versionSign.text = "Your version of MCScript is OUTDATED (Yours: v"..currentVersion.." "..Beta.." Current: v"..ver.." "..beta..")"
 			else
-				versionSign.text = "Your version of MCScript by ensage-forum.ru is OUTDATED (Yours: v"..currentVersion.." "..Beta.." Current: v"..ver..")"
+				versionSign.text = "Your version of MCScript is OUTDATED (Yours: v"..currentVersion.." "..Beta.." Current: v"..ver..")"
 			end
 			versionSign.color = 0xA40062FF
 			if info then
@@ -7898,9 +7893,9 @@ function Load()
 	local up,ver,beta,info = Version()
 	if up then
 		if Beta ~= "" then
-			versionSign.text = "Your version of MCScript by ensage-forum.ru is up-to-date! (v"..currentVersion.." "..Beta..")"
+			versionSign.text = "Your version of MCScript is up-to-date! (v"..currentVersion.." "..Beta..")"
 		else
-			versionSign.text = "Your version of MCScript by ensage-forum.ru is up-to-date! (v"..currentVersion..")"
+			versionSign.text = "Your version of MCScript is up-to-date! (v"..currentVersion..")"
 		end
 		versionSign.color = 0x007ACCFF
 		if info then
@@ -7910,9 +7905,9 @@ function Load()
 	end
 	if outdated then
 		if beta ~= "" then
-			versionSign.text = "Your version of MCScript by ensage-forum.ru is OUTDATED (Yours: v"..currentVersion.." "..Beta.." Current: v"..ver.." "..beta.."), to find news and updates, go to ensage-forum.ru!"
+			versionSign.text = "Your version of MCScript is OUTDATED (Yours: v"..currentVersion.." "..Beta.." Current: v"..ver.." "..beta.."), to find news and updates!"
 		else
-			versionSign.text = "Your version of MCScript by ensage-forum.ru is OUTDATED (Yours: v"..currentVersion.." "..Beta.." Current: v"..ver.."), to find news and updates, go to ensage-forum.ru!"
+			versionSign.text = "Your version of MCScript is OUTDATED (Yours: v"..currentVersion.." "..Beta.." Current: v"..ver.."), to find news and updates!"
 		end
 		versionSign.color = 0xA40062FF
 		if info then
@@ -8095,242 +8090,7 @@ function Load()
 				{ CDOTA_Unit_Hero_Winter_Wyvern, {{ 2 }} },
 				{ CDOTA_Unit_Hero_Shredder, {{ 4, "radius", false, 0.5, false, "speed" }, { 6 }, { 5, "radius", false, 0.5, false, "speed" }, { 7 }, { 1, "whirling_radius" }, { 2, "chain_radius", false, nil, false, "speed" }} },
 				{ CDOTA_Unit_Hero_Rubick, {{ 1, nil, true }, { "rubick_telekinesis_land" }, { "ursa_earthshock", "shock_radius", true}, 
-																			{ "ursa_overpower", nil, false, nil, false, nil, false, nil, nil, true, true }, 
-																			{ "ursa_enrage", 350, false, nil, false, nil, false, nil, nil, true },
-																			{ "bloodseeker_rupture", nil, false, nil, false, nil, false, nil, nil, true }, 
-																			{ "bloodseeker_blood_bath" , nil, false, 2.6}, 
-																			{ "bloodseeker_bloodrage", nil, false, nil, false, nil, false, nil, nil, true, true },
-  																			{ "lina_light_strike_array", nil, true , 0.5}, 
-																			{ "lina_dragon_slave", nil, true, nil, false, "dragon_slave_speed", nil, nil, nil, nil, true }, 
-																			{ "lina_laguna_blade", nil, false, nil, killsteal, nil, nil, nil, nil, nil, true }, 
-																			{ "zuus_lightning_bolt", nil, true }, 
-																			{ "zuus_arc_lightning", nil, nil, nil, nil, nil, nil, nil, nil, nil, true }, 
-																			{ "zuus_thundergods_wrath", nil, true, -0.1, killsteal, nil, nil, nil, nil, nil, true },
-																			{ "tinker_heat_seeking_missile" , "radius"}, 
-																			{ "tinker_laser" }, 
-																			{ "tinker_rearm", nil, nil, nil, nil, nil, nil, nil, nil, nil, true }, 
-																			{ "lion_voodoo", 450, true }, 
-																			{ "lion_impale", nil, true }, 
-																			{ "lion_finger_of_death", nil, false, nil, killsteal, nil, nil, nil, nil, nil, true },
-																			{ "shadow_shaman_voodoo", nil, true }, 
-																			{ "shadow_shaman_shackles", nil, true, nil, nil, nil, nil, nil, nil, nil, true }, 
-																			{ "shadow_shaman_ether_shock", nil, nil, nil, nil, nil, nil, nil, nil, nil, true }, 
-																			{ "shadow_shaman_mass_serpent_ward" },
-																			{ "axe_berserkers_call", "radius", true }, 
-																			{ "axe_battle_hunger" }, 
-																			{ "axe_culling_blade", nil, false, nil, true, nil, false, nil, nil, true },
-																			{ "necrolyte_death_pulse", "area_of_effect" }, 
-																			{ "necrolyte_reapers_scythe" },
-																			{ "phantom_assassin_stifling_dagger", nil, true, nil, false, "dagger_speed" }, 
-																			{ "phantom_assassin_phantom_strike", nil, nil, nil, nil, nil, nil, nil, nil, nil, true },
-																			{ "pudge_meat_hook", nil, true, nil, false, "hook_speed", true, "hook_width", true, true }, 
-																			{ "pudge_dismember", nil, true, nil, nil, nil, nil, nil, nil, true, true },
-																			{ "earthshaker_echo_slam", 625, true}, 
-																			{ "earthshaker_enchant_totem", 350, true }, 
-																			{ "earthshaker_fissure", nil, true, -0.1 },
-																			{ "skywrath_mage_concussive_shot", "launch_radius", true }, 
-																			{ "skywrath_mage_ancient_seal" }, 
-																			{ "skywrath_mage_mystic_flare", nil, false, 0.2 }, 
-																			{ "skywrath_mage_ancient_seal" },
-																			{ "leshrac_split_earth", nil, true, 0.35}, 
-																			{ "leshrac_diabolic_edict", "radius" }, 
-																			{ "leshrac_lightning_storm", nil, true }, 
-																			{ "leshrac_pulse_nova", "radius" },
-																			{ "windrunner_shackleshot", nil, true, nil, false, "arrow_speed" }, 
-																			{ "windrunner_powershot", nil, true, nil, false, "arrow_speed" },
-																			{ "rattletrap_hookshot", nil, true, nil, false, nil, true, "latch_radius", true, true }, 
-																			{ "rattletrap_battery_assault", "radius", true, 0.7 }, 
-																			{ "rattletrap_rocket_flare" }, 
-																			{ "rattletrap_power_cogs", 125, true, 0.1 },
-																			{ "ogre_magi_unrefined_fireblast", nil, true }, 
-																			{ "ogre_magi_fireblast", nil, true }, 
-																			{ "ogre_magi_ignite", nil, true, nil, false, "projectile_speed" }, 
-																			{ "ogre_magi_bloodlust" },
-																			{ "kunkka_x_marks_the_spot", nil, false, 0.1 }, 
-																			{ "kunkka_torrent", nil, true, 1.7 }, 
-																			{ "kunkka_ghostship", nil, false, nil, false, "ghostship_speed" },
-																			{ "slardar_slithereen_crush", "crush_radius", true}, 
-																			{ "slardar_sprint", nil, true }, 
-																			{ "slardar_amplify_damage" },
-																			{ "bane_nightmare", nil, true, 1 }, 
-																			{ "bane_fiends_grip", nil, true}, 
-																			{ "bane_enfeeble" , nil, true }, 
-																			{ "bane_brain_sap", nil, true },
-																			{ "bristleback_viscous_nasal_goo" }, 
-																			{ "bristleback_quill_spray", "radius", false, nil, false, nil, false, nil, nil, true },
-																			{ "centaur_hoof_stomp", "radius", true }, 
-																			{ "centaur_double_edge" },
-																			{ "clinkz_strafe", 630 },
-																			{ "crystal_maiden_freezing_field", nil, true, -0.1 }, 
-																			{ "crystal_maiden_frostbite", nil, true },
-																			{ "death_prophet_carrion_swarm", nil, true }, 
-																			{ "death_prophet_silence", nil, true, -0.1 },
-																			{ "doom_bringer_scorched_earth", "radius" }, 
-																			{ "doom_bringer_doom", nil, true }, 
-																			{ "doom_bringer_lvl_death", nil, true},
-																			{ "dragon_knight_dragon_tail", nil, true }, 
-																			{ "dragon_knight_breathe_fire", nil, true },
-																			{ "drow_ranger_wave_of_silence", nil, true, nil, false, "wave_speed" },
-																			{ "furion_sprout", nil, true, -0.1 },
-																			{ "huskar_life_break", nil, false, nil, false, "charge_speed" },
-																			{ "jakiro_ice_path", nil, true, 0.5 }, 
-																			{ "jakiro_dual_breath", nil, true },
-																			{ "lich_frost_nova", nil, true }, 
-																			{ "lich_frost_armor" },
-																			{ "life_stealer_open_wounds", nil, true },
-																			{ "luna_lucent_beam", nil, true },
-																			{ "mirana_arrow", nil, true, nil, false, "arrow_speed", true, "arrow_width", "ally" }, 
-																			{ "mirana_starfall", 400 },
-																			{ "morphling_waveform" }, 
-																			{ "morphling_adaptive_strike", nil, true, nil, false, "projectile_speed" },
-																			{ "night_stalker_void", nil, true }, 
-																			{ "night_stalker_crippling_fear", nil, true },
-																			{ "nyx_assassin_impale", nil, true }, 
-																			{ "nyx_assassin_mana_burn" },
-																			{ "queenofpain_shadow_strike", nil, true, nil, false, "projectile_speed" }, 
-																			{ "queenofpain_scream_of_pain" , "area_of_effect" }, 
-																			{ "queenofpain_sonic_wave", nil, true, nil, false, "speed" },
-																			{ "razor_static_link" }, 
-																			{ "razor_plasma_field", "radius" },
-																			{ "riki_smoke_screen", nil, true, -0.1 }, 
-																			{ "riki_blink_strike" },
-																			{ "sniper_shrapnel", "radius", true, 1.4 }, 
-																			{ "sniper_assassinate", nil, false, nil, true },
-																			{ "spirit_breaker_charge_of_darkness", nil, true, nil, false, "movement_speed" }, 
-																			{ "spirit_breaker_nether_strike", nil, true },
-																			{ "sven_storm_bolt", nil, true, nil, false, "bolt_speed" },
-																			{ "tidehunter_gush", nil, true, nil, false, "projectile_speed" }, 
-																			{ "tidehunter_anchor_smash", "radius" },
-																			{ "tiny_avalanche", nil, true, 0.5 }, 
-																			{ "tiny_toss" },
-																			{ "invoker_cold_snap"}, {"invoker_ice_wall", 590, true, 1},
-																			{ "invoker_tornado", "travel_distance", true, nil, false, "travel_speed"}, {"invoker_emp", nil, false, 2.9},
-																			{ "invoker_forge_spirit", 700}, {"invoker_sun_strike", nil, false, 1.7}, {"invoker_chaos_meteor", nil, false, 1.3}, {"invoker_alacrity", nil, nil, nil, nil, nil, nil, nil, nil, nil, true},
-																			{ "invoker_deafening_blast", "travel_distance", true, nil, false, "travel_speed"}, {"invoker_ghost_walk", nil, true},
-																			{ "templar_assassin_meld", nil, nil, nil, nil, nil, nil, nil, nil, nil, true }, 
-																			{ "templar_assassin_refraction" },
-																			{ "abaddon_aphotic_shield" }, { "abaddon_death_coil" },
-																			{ "ancient_apparition_cold_feet", nil, true, 4 }, 
-																			{ "ancient_apparition_ice_vortex", nil, true }, 
-																			{ "ancient_apparition_ice_blast", nil, true, 2.01}, 
-																			{ "ancient_apparition_ice_blast_release" },
-																			{ "antimage_mana_void", nil, false, nil, true },
-																			{ "batrider_flaming_lasso", nil, true, "duration", false, nil, false, nil, nil, true }, 
-																			{ "batrider_sticky_napalm", nil, false, 0.2 }, 
-																			{ "batrider_flamebreak", nil, true, 0.3 },
-																			{ "beastmaster_primal_roar", nil, true }, 
-																			{ "beastmaster_wild_axes", nil, true }, 
-																			{ "beastmaster_call_of_the_wild_boar", nil, true },
-																			{ "bounty_hunter_track" }, 
-																			{ "bounty_hunter_shuriken_toss", nil, true, nil, true },
-																			{ "broodmother_spawn_spiderlings" },
-																			{ "chaos_knight_chaos_strike", nil, true, nil, nil, nil, nil, nil, nil, nil, true }, 
-																			{ "chaos_knight_chaos_bolt", nil, true },
-																			{ "elder_titan_ancestral_spirit", nil, true }, 
-																			{ "elder_titan_echo_stomp", "radius", true }, 
-																			{ "elder_titan_earth_splitter" },
-																			{ "enchantress_enchant", nil, true },
-																			{ "enigma_malefice", nil, true}, 
-																			{ "enigma_midnight_pulse" },
-																			{ "legion_commander_press_the_attack" }, 
-																			{ "legion_commander_overwhelming_odds", nil, true }, 
-																			{ "legion_commander_duel" },
-																			{ "magnataur_shockwave", nil, nil, nil, nil, "shock_speed" }, 
-																			{ "magnataur_skewer", nil, true, nil, nil, "skewer_speed" },
-																			{ "medusa_mystic_snake" },
-																			{ "naga_siren_ensnare", nil, true, nil, false, "net_speed", nil, nil, nil, true }, 
-																			{ "naga_siren_rip_tide", "radius" },
-																			{ "omniknight_purification" },
-																			{ "omniknight_repel" },
-																			{ "pugna_nether_blast", nil, true }, 
-																			{ "pugna_decrepify", nil, true },
-																			{ "shadow_demon_demonic_purge", nil, true}, 
-																			{ "shadow_demon_disruption", nil, true }, 
-																			{ "shadow_demon_soul_catcher" }, 
-																			{ "shadow_demon_shadow_poison" },
-																			{ "skeleton_king_hellfire_blast", nil, true, nil, false, "blast_speed" },
-																			{ "spectre_spectral_dagger" },
-																			{ "vengefulspirit_magic_missile", nil, true, nil, false, "magic_missile_speed"}, 
-																			{ "vengefulspirit_wave_of_terror" },
-																			{ "venomancer_venomous_gale", nil, true }, 
-																			{ "venomancer_plague_ward" },
-																			{ "brewmaster_thunder_clap", "radius", true }, 
-																			{ "brewmaster_drunken_haze", nil, true },
-																			{ "storm_spirit_ball_lightning", nil, true, nil, false, "ball_lightning_move_speed" }, 
-																			{ "storm_spirit_electric_vortex", nil, true }, 
-																			{ "storm_spirit_static_remnant" },
-																			{ "ember_spirit_fire_remnant" }, 
-																			{ "ember_spirit_activate_fire_remnant" }, 
-																			{ "ember_spirit_sleight_of_fist", "radius"}, 
-																			{ "ember_spirit_searing_chains", "radius", true }, 
-																			{ "ember_spirit_flame_guard", "radius" },
-																			{ "slark_dark_pact", "radius"}, 
-																			{ "slark_pounce", "pounce_radius", true, nil, false, "pounce_speed" },
-																			{ "nevermore_shadowraze1", "shadowraze_range" }, 
-																			{ "nevermore_shadowraze2", "shadowraze_range" }, 
-																			{ "nevermore_shadowraze3", "shadowraze_range" },
-																			{ "weaver_the_swarm", "radius"}, 
-																			{ "weaver_shukuchi" },
-																			{ "troll_warlord_whirling_axes_ranged", nil, true, nil, false, "axe_speed"}, 
-																			{ "troll_warlord_whirling_axes_melee", "max_range" },
-																			{ "earth_spirit_boulder_smash", nil, true }, 
-																			{ "earth_spirit_geomagnetic_grip", nil, false }, 
-																			{ "earth_spirit_rolling_boulder", nil, false, 0.6 },
-																			{ "lone_druid_rabid" }, { "lone_druid_true_form_battle_cry", 700 },
-																			{ "wisp_spirits", 1300 },
-																			{ "chen_penitence" }, { "chen_test_of_faith" },
-																			{ "phoenix_icarus_dive", nil, true }, 
-																			{ "phoenix_icarus_dive_stop" }, 
-																			{ "phoenix_fire_spirits", nil, true, nil, nil, "spirit_speed" }, 
-																			{ "phoenix_sun_ray", nil, false, nil, true }, 
-																			{ "phoenix_sun_ray_toggle_move" },
-																			{ "tusk_snowball", nil, true, nil, false, "snowball_speed" }, 
-																			{ "tusk_ice_shards", nil, true, nil, false, "shard_speed" }, 
-																			{ "tusk_frozen_sigil", nil, true }, 
-																			{ "tusk_walrus_punch", nil, false }, 
-																			{ "tusk_walrus_kick", nil, true },				
-																			{ "visage_grave_chill", nil, true }, 
-																			{ "visage_soul_assumption" }, 
-																			{ "gyrocopter_homing_missile" , nil, true, 3, false, "speed" }, { "gyrocopter_rocket_barrage", "radius" }, 
-																			{ "gyrocopter_flak_cannon", "radius" },
-																			{ "undying_decay" }, 
-																			{ "undying_soul_rip" }, 
-																			{ "undying_tombstone", "radius" },
-																			{ "terrorblade_sunder" }, 
-																			{ "terrorblade_reflection", nil, true }, 
-																			{ "terrorblade_metamorphosis" }, 
-																			{ "terrorblade_conjure_image" },
-																			{ "puck_waning_rift", "radius", true }, 
-																			{ "puck_illusory_orb", nil, false, nil, false, "orb_speed" }, 
-																			{ "puck_ethereal_jaunt" },
-																			{ "treant_leech_seed", nil, true },
-																			{ "phantom_lancer_spirit_lance", nil, true, nil, false, "lance_speed" },
-																			{ "silencer_last_word", nil, true, 4 }, 
-																			{ "silencer_curse_of_the_silent" },
-																			{ "disruptor_kinetic_field", nil, true, 1.2 }, 
-																			{ "disruptor_thunder_strike" }, 
-																			{ "disruptor_glimpse", nil, true },
-																			{ "keeper_of_the_light_illuminate" }, 
-																			{ "keeper_of_the_light_spirit_form_illuminate" }, 
-																			{ "keeper_of_the_light_mana_leak", nil, true }, 
-																			{ "keeper_of_the_light_blinding_light", nil, true },
-																			{ "oracle_fortunes_end", nil, true, nil, false, "bolt_speed" }, 
-																			{ "oracle_purifying_flames", nil, false, nil, true },
-																			{ "sandking_burrowstrike", nil, true, nil, false, "burrow_speed" },
-																			{ "warlock_fatal_bonds" }, 
-																			{ "warlock_shadow_word" },
-																			{ "dark_seer_vacuum", "radius", true }, 
-																			{ "dark_seer_wall_of_replica" }, 
-																			{ "dark_seer_ion_shell" }, 
-																			{ "dark_seer_surge", nil, true },
-																			{ "winter_wyvern_splinter_blast" }, 
-																			{ "shredder_whirling_death", "whirling_radius" }, 
-																			{ "shredder_timber_chain", "chain_radius", false, nil, false, "speed" }, 
-																			{ "shredder_chakram", "radius", false, 0.2, false, "speed" }, 
-																			{ "shredder_return_chakram" }, 
-																			{ "shredder_chakram_2", "radius", false, 0.2, false, "speed" }, 
-																			{ "shredder_return_chakram_2" }, { 3 }} }
-			}
+				}
 			script:RegisterEvent(EVENT_TICK, Main)
 			script:RegisterEvent(EVENT_FRAME, OrbWalk)
 			script:RegisterEvent(EVENT_KEY, Key)
